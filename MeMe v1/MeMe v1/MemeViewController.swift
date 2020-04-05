@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
@@ -17,7 +17,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var shareButton: UIBarButtonItem!
     @IBOutlet weak var topToolbar: UIToolbar!
     @IBOutlet weak var bottomToolbar: UIToolbar!
-    
     
     let pickerController = UIImagePickerController()
     var activeTextField: TextFieldType = .top
@@ -40,7 +39,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         shareButton.isEnabled = false
         setupTextField()
         setDelegates()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -120,7 +118,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func save() {
         let memedImage = generateMemedImage()
-        meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageView.image!, memedImage: memedImage)
+        let newMeme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageView.image!, memedImage: memedImage)
+        meme = newMeme
+        let object = UIApplication.shared.delegate
+        let appDelegate = object as! AppDelegate
+        appDelegate.memes.append(newMeme)
     }
     
     func share() {
@@ -146,7 +148,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 }
 
-extension ViewController: UITextFieldDelegate{
+extension MemeViewController: UITextFieldDelegate{
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.activeTextField = TextFieldType(rawValue: textField.tag)!
         switch self.activeTextField {
@@ -163,7 +165,7 @@ extension ViewController: UITextFieldDelegate{
     }
 }
 
-extension ViewController {
+extension MemeViewController {
     @IBAction func onPressShare(_ sender: Any) {
         self.share()
     }
@@ -179,4 +181,9 @@ extension ViewController {
         pickerController.sourceType = .camera
         self.present(pickerController, animated: true)
     }
+    
+    @IBAction func onPressCancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
