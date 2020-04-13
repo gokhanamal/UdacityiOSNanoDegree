@@ -33,6 +33,8 @@ class ShowLocationViewController: UIViewController {
             OTMClient.addNewLocation(mapString: mapItem.name ?? "", mediaURL: mediaURL, latitude: coordinate.latitude, longitude: coordinate.longitude) { success, error in
                 if success {
                     self.dismiss(animated: true, completion: nil)
+                } else {
+                    self.showErrorAlert(title: "Failed!", message: error?.localizedDescription ?? "Could not added the new location.")
                 }
             }
         }

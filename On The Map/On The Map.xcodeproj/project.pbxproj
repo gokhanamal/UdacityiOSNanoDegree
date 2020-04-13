@@ -13,9 +13,9 @@
 		774E0D092443CFCD000DCF6F /* OTMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E0D082443CFCD000DCF6F /* OTMModel.swift */; };
 		774E0D0B2443D82E000DCF6F /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E0D0A2443D82E000DCF6F /* LocationListViewController.swift */; };
 		774E0D0D2443E276000DCF6F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774E0D0C2443E276000DCF6F /* AddLocationViewController.swift */; };
+		7754EA792444B4ED00F05EDD /* SessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7754EA782444B4ED00F05EDD /* SessionResponse.swift */; };
 		777A932D2443B4E7009732A9 /* OTMClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777A932C2443B4E7009732A9 /* OTMClient.swift */; };
 		777A932F2443B980009732A9 /* SessionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777A932E2443B980009732A9 /* SessionRequest.swift */; };
-		777A93312443BABA009732A9 /* SessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777A93302443BABA009732A9 /* SessionResponse.swift */; };
 		777A93332443C479009732A9 /* OTMErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777A93322443C479009732A9 /* OTMErrorResponse.swift */; };
 		777B6DCF243FCA790099C4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B6DCE243FCA790099C4E7 /* AppDelegate.swift */; };
 		777B6DD1243FCA790099C4E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B6DD0243FCA790099C4E7 /* SceneDelegate.swift */; };
@@ -25,7 +25,6 @@
 		777B6DDB243FCA7B0099C4E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777B6DD9243FCA7B0099C4E7 /* LaunchScreen.storyboard */; };
 		77D3BBFC24447C6200BA3C6B /* UserLocationPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3BBFB24447C6200BA3C6B /* UserLocationPost.swift */; };
 		77D3BBFE24447D2F00BA3C6B /* UserLocatonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3BBFD24447D2F00BA3C6B /* UserLocatonResponse.swift */; };
-		77D3BC0024447EF700BA3C6B /* SessonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3BBFF24447EF700BA3C6B /* SessonData.swift */; };
 		77D7C0452444620C006D6C5C /* ShowLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D7C0442444620C006D6C5C /* ShowLocationViewController.swift */; };
 		77E730522444790600074378 /* Extension+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E730512444790600074378 /* Extension+DateFormatter.swift */; };
 		77F6154124448D850059BC1D /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6154024448D850059BC1D /* Extension+UIViewController.swift */; };
@@ -38,9 +37,9 @@
 		774E0D082443CFCD000DCF6F /* OTMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTMModel.swift; sourceTree = "<group>"; };
 		774E0D0A2443D82E000DCF6F /* LocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewController.swift; sourceTree = "<group>"; };
 		774E0D0C2443E276000DCF6F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		7754EA782444B4ED00F05EDD /* SessionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
 		777A932C2443B4E7009732A9 /* OTMClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTMClient.swift; sourceTree = "<group>"; };
 		777A932E2443B980009732A9 /* SessionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRequest.swift; sourceTree = "<group>"; };
-		777A93302443BABA009732A9 /* SessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
 		777A93322443C479009732A9 /* OTMErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTMErrorResponse.swift; sourceTree = "<group>"; };
 		777B6DCB243FCA790099C4E7 /* On The Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On The Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		777B6DCE243FCA790099C4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +51,6 @@
 		777B6DDC243FCA7B0099C4E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77D3BBFB24447C6200BA3C6B /* UserLocationPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationPost.swift; sourceTree = "<group>"; };
 		77D3BBFD24447D2F00BA3C6B /* UserLocatonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocatonResponse.swift; sourceTree = "<group>"; };
-		77D3BBFF24447EF700BA3C6B /* SessonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessonData.swift; sourceTree = "<group>"; };
 		77D7C0442444620C006D6C5C /* ShowLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLocationViewController.swift; sourceTree = "<group>"; };
 		77E730512444790600074378 /* Extension+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+DateFormatter.swift"; sourceTree = "<group>"; };
 		77F6154024448D850059BC1D /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
@@ -114,12 +112,11 @@
 		777A932B2443B4C8009732A9 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				777A93302443BABA009732A9 /* SessionResponse.swift */,
+				7754EA782444B4ED00F05EDD /* SessionResponse.swift */,
 				777A93322443C479009732A9 /* OTMErrorResponse.swift */,
 				774E0D042443CAFF000DCF6F /* User.swift */,
 				774E0D062443CBE1000DCF6F /* UserResonse.swift */,
 				77D3BBFD24447D2F00BA3C6B /* UserLocatonResponse.swift */,
-				77D3BBFF24447EF700BA3C6B /* SessonData.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -279,15 +276,14 @@
 				777B6DD3243FCA790099C4E7 /* LoginViewController.swift in Sources */,
 				777A932D2443B4E7009732A9 /* OTMClient.swift in Sources */,
 				777B6DCF243FCA790099C4E7 /* AppDelegate.swift in Sources */,
+				7754EA792444B4ED00F05EDD /* SessionResponse.swift in Sources */,
 				77D3BBFE24447D2F00BA3C6B /* UserLocatonResponse.swift in Sources */,
 				77F6154124448D850059BC1D /* Extension+UIViewController.swift in Sources */,
 				774E0D092443CFCD000DCF6F /* OTMModel.swift in Sources */,
 				777B6DD1243FCA790099C4E7 /* SceneDelegate.swift in Sources */,
 				77D7C0452444620C006D6C5C /* ShowLocationViewController.swift in Sources */,
 				777A932F2443B980009732A9 /* SessionRequest.swift in Sources */,
-				777A93312443BABA009732A9 /* SessionResponse.swift in Sources */,
 				777A93332443C479009732A9 /* OTMErrorResponse.swift in Sources */,
-				77D3BC0024447EF700BA3C6B /* SessonData.swift in Sources */,
 				774E0D012443C867000DCF6F /* MapViewController.swift in Sources */,
 				774E0D072443CBE1000DCF6F /* UserResonse.swift in Sources */,
 				774E0D0B2443D82E000DCF6F /* LocationListViewController.swift in Sources */,

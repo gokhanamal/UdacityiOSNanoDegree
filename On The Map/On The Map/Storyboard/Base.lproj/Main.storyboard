@@ -264,7 +264,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Location" id="l10-ZO-rTR"/>
                     <connections>
-                        <outlet property="acitivityIndicator" destination="sa7-W2-NcL" id="bqQ-k6-Xir"/>
+                        <outlet property="activityIndicator" destination="sa7-W2-NcL" id="qEA-SM-Bos"/>
                         <outlet property="findLocationButton" destination="iSP-5E-CQs" id="ToB-lw-AXc"/>
                         <outlet property="locaitonTextField" destination="yqQ-sy-fEw" id="vnd-Uc-bNF"/>
                         <outlet property="urlTextField" destination="cfS-fU-2GH" id="NWs-Qa-Mgj"/>

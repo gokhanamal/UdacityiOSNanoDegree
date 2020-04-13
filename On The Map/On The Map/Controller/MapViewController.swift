@@ -27,14 +27,18 @@ class MapViewController: UIViewController {
     }
     
     @objc func onPressRefresh() {
-        self.getAllLocations()
+        getAllLocations()
     }
     
     func getAllLocations() {
         OTMClient.getUserLocation() { users, error in
-            OTMModel.users = users
-            let annotions = users.map(self.userMapToAnnotation)
-            self.mapView.addAnnotations(annotions)
+            if let error = error {
+                self.showErrorAlert(title: "Request failed!", message: error.localizedDescription)
+            } else {
+                OTMModel.users = users
+                let annotions = users.map(self.userMapToAnnotation)
+                self.mapView.addAnnotations(annotions)
+            }
         }
     }
     

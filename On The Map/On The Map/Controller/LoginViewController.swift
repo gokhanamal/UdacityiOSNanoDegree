@@ -41,11 +41,7 @@ class LoginViewController: UIViewController {
     }
     
     func setLoadig(_ isLoading: Bool) {
-        if isLoading {
-            activityIndicator.startAnimating()
-        } else {
-            activityIndicator.stopAnimating()
-        }
+        isLoading ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
         passwordTextField.isEnabled = !isLoading
         emailTextField.isEnabled = !isLoading
         loginButton.isEnabled = !isLoading

@@ -63,8 +63,13 @@ class LocationListViewController: UITableViewController {
     
     func getAllLocations() {
         OTMClient.getUserLocation() { users, error in
-            OTMModel.users = users
-            self.tableView.reloadData()
+            if let error = error {
+                self.showErrorAlert(title: "Request failed!", message: error.localizedDescription)
+            } else {
+                OTMModel.users = users
+                self.tableView.reloadData()
+            }
+           
         }
     }
 }

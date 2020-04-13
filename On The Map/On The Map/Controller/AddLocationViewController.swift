@@ -13,7 +13,7 @@ class AddLocationViewController: UIViewController {
     @IBOutlet weak var locaitonTextField: UITextField!
     @IBOutlet weak var urlTextField: UITextField!
     @IBOutlet weak var findLocationButton: UIButton!
-    @IBOutlet weak var acitivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,11 +60,7 @@ class AddLocationViewController: UIViewController {
     }
     
     func setLoading(_ isLoading: Bool) {
-        if isLoading {
-            acitivityIndicator.startAnimating()
-        } else {
-            acitivityIndicator.stopAnimating()
-        }
+        isLoading ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
         findLocationButton.isEnabled = !isLoading
         locaitonTextField.isEnabled = !isLoading
         urlTextField.isEnabled = !isLoading
