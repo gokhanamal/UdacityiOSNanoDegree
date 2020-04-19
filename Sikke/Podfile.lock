@@ -1,0 +1,20 @@
+PODS:
+  - FlagKit (2.2)
+  - JGProgressHUD (2.1)
+
+DEPENDENCIES:
+  - FlagKit
+  - JGProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - FlagKit
+    - JGProgressHUD
+
+SPEC CHECKSUMS:
+  FlagKit: eca7dc89064b0c986302ba9acefad1bf80a435b1
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+
+PODFILE CHECKSUM: cf6653c94e8a3a8ac25d2147e981519e1530363c
+
+COCOAPODS: 1.8.4

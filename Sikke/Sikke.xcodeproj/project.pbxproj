@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51CB9E5F1652D967355D3A3B /* Pods_Sikke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E278A9EC2A11FA83EE0E28 /* Pods_Sikke.framework */; };
+		7720E2D9244873FE00C3B288 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720E2D8244873FE00C3B288 /* AppDelegate.swift */; };
+		7720E2DB244873FE00C3B288 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720E2DA244873FE00C3B288 /* SceneDelegate.swift */; };
+		7720E2DD244873FE00C3B288 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720E2DC244873FE00C3B288 /* CurrencyViewController.swift */; };
+		7720E2E0244873FE00C3B288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7720E2DE244873FE00C3B288 /* Main.storyboard */; };
+		7720E2E2244873FF00C3B288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7720E2E1244873FF00C3B288 /* Assets.xcassets */; };
+		7720E2E5244873FF00C3B288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7720E2E3244873FF00C3B288 /* LaunchScreen.storyboard */; };
+		7720E2F324487BC600C3B288 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720E2F224487BC600C3B288 /* DataModel.swift */; };
+		7720E2F624487F8900C3B288 /* SikkeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720E2F524487F8900C3B288 /* SikkeClient.swift */; };
+		7720E2F9244884FC00C3B288 /* RatesRespose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720E2F8244884FC00C3B288 /* RatesRespose.swift */; };
+		77419E3A244BB14700F92FFF /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77419E39244BB14700F92FFF /* PortfolioCell.swift */; };
+		77419E41244BB33000F92FFF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77419E40244BB33000F92FFF /* DataController.swift */; };
+		77419E4C244BB71300F92FFF /* SikkeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77419E4A244BB71300F92FFF /* SikkeModel.xcdatamodeld */; };
+		77B825302449A84A002D4794 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B8252F2449A84A002D4794 /* PortfolioViewController.swift */; };
+		77B825342449BF2C002D4794 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B825332449BF2C002D4794 /* Colors.swift */; };
+		77F6D660244C778D0080F33C /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6D65F244C778D0080F33C /* LaunchViewController.swift */; };
+		77F6D664244CC9550080F33C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6D663244CC9550080F33C /* SettingsViewController.swift */; };
+		77FCD4182448FFB1003EA6B6 /* Extension+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FCD4172448FFB1003EA6B6 /* Extension+Double.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29FFA34302D133FA4BD50D7A /* Pods-Sikke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sikke.debug.xcconfig"; path = "Target Support Files/Pods-Sikke/Pods-Sikke.debug.xcconfig"; sourceTree = "<group>"; };
+		44E278A9EC2A11FA83EE0E28 /* Pods_Sikke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sikke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53CAB2294FD43B6520D0A99D /* Pods-Sikke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sikke.release.xcconfig"; path = "Target Support Files/Pods-Sikke/Pods-Sikke.release.xcconfig"; sourceTree = "<group>"; };
+		7720E2D5244873FE00C3B288 /* Sikke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sikke.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7720E2D8244873FE00C3B288 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7720E2DA244873FE00C3B288 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7720E2DC244873FE00C3B288 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		7720E2DF244873FE00C3B288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7720E2E1244873FF00C3B288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7720E2E4244873FF00C3B288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7720E2E6244873FF00C3B288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7720E2F224487BC600C3B288 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7720E2F524487F8900C3B288 /* SikkeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SikkeClient.swift; sourceTree = "<group>"; };
+		7720E2F8244884FC00C3B288 /* RatesRespose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesRespose.swift; sourceTree = "<group>"; };
+		77419E39244BB14700F92FFF /* PortfolioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCell.swift; sourceTree = "<group>"; };
+		77419E40244BB33000F92FFF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		77419E4B244BB71300F92FFF /* SikkeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SikkeModel.xcdatamodel; sourceTree = "<group>"; };
+		77B8252F2449A84A002D4794 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		77B825332449BF2C002D4794 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		77F6D65F244C778D0080F33C /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		77F6D663244CC9550080F33C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		77FCD4172448FFB1003EA6B6 /* Extension+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Double.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7720E2D2244873FE00C3B288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51CB9E5F1652D967355D3A3B /* Pods_Sikke.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60C778A5DCAEC26303717931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44E278A9EC2A11FA83EE0E28 /* Pods_Sikke.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7720E2CC244873FE00C3B288 = {
+			isa = PBXGroup;
+			children = (
+				7720E2D7244873FE00C3B288 /* Sikke */,
+				7720E2D6244873FE00C3B288 /* Products */,
+				A2269093B9C76EB0E50BA4BC /* Pods */,
+				60C778A5DCAEC26303717931 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7720E2D6244873FE00C3B288 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7720E2D5244873FE00C3B288 /* Sikke.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7720E2D7244873FE00C3B288 /* Sikke */ = {
+			isa = PBXGroup;
+			children = (
+				77FCD4162448FF99003EA6B6 /* Extentions */,
+				7720E2F12448743800C3B288 /* Storyboards */,
+				7720E2F02448742700C3B288 /* Assets */,
+				7720E2EF2448741F00C3B288 /* Controller */,
+				7720E2EE2448741600C3B288 /* View */,
+				7720E2ED2448740C00C3B288 /* App */,
+				7720E2EC2448740600C3B288 /* Model */,
+				7720E2E6244873FF00C3B288 /* Info.plist */,
+			);
+			path = Sikke;
+			sourceTree = "<group>";
+		};
+		7720E2EC2448740600C3B288 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77419E3C244BB23300F92FFF /* CoreData */,
+				7720E2F7244884E700C3B288 /* Request */,
+				7720E2F424487F7100C3B288 /* Client */,
+				7720E2F224487BC600C3B288 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7720E2ED2448740C00C3B288 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7720E2D8244873FE00C3B288 /* AppDelegate.swift */,
+				7720E2DA244873FE00C3B288 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7720E2EE2448741600C3B288 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77B566DB244A449F00540958 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7720E2EF2448741F00C3B288 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7720E2DC244873FE00C3B288 /* CurrencyViewController.swift */,
+				77B8252F2449A84A002D4794 /* PortfolioViewController.swift */,
+				77F6D65F244C778D0080F33C /* LaunchViewController.swift */,
+				77F6D663244CC9550080F33C /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7720E2F02448742700C3B288 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7720E2E1244873FF00C3B288 /* Assets.xcassets */,
+				77B825332449BF2C002D4794 /* Colors.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7720E2F12448743800C3B288 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7720E2E3244873FF00C3B288 /* LaunchScreen.storyboard */,
+				7720E2DE244873FE00C3B288 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7720E2F424487F7100C3B288 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				7720E2F524487F8900C3B288 /* SikkeClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		7720E2F7244884E700C3B288 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				7720E2F8244884FC00C3B288 /* RatesRespose.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		77419E3C244BB23300F92FFF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				77419E40244BB33000F92FFF /* DataController.swift */,
+				77419E4A244BB71300F92FFF /* SikkeModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		77B566DB244A449F00540958 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				77419E39244BB14700F92FFF /* PortfolioCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		77FCD4162448FF99003EA6B6 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				77FCD4172448FFB1003EA6B6 /* Extension+Double.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		A2269093B9C76EB0E50BA4BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29FFA34302D133FA4BD50D7A /* Pods-Sikke.debug.xcconfig */,
+				53CAB2294FD43B6520D0A99D /* Pods-Sikke.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7720E2D4244873FE00C3B288 /* Sikke */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7720E2E9244873FF00C3B288 /* Build configuration list for PBXNativeTarget "Sikke" */;
+			buildPhases = (
+				40B29CA7260DB7271C0126F4 /* [CP] Check Pods Manifest.lock */,
+				7720E2D1244873FE00C3B288 /* Sources */,
+				7720E2D2244873FE00C3B288 /* Frameworks */,
+				7720E2D3244873FE00C3B288 /* Resources */,
+				A2D83C9AE8EEC9A9A946F4AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sikke;
+			productName = Sikke;
+			productReference = 7720E2D5244873FE00C3B288 /* Sikke.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7720E2CD244873FE00C3B288 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Gokhan Namal";
+				TargetAttributes = {
+					7720E2D4244873FE00C3B288 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 7720E2D0244873FE00C3B288 /* Build configuration list for PBXProject "Sikke" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7720E2CC244873FE00C3B288;
+			productRefGroup = 7720E2D6244873FE00C3B288 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7720E2D4244873FE00C3B288 /* Sikke */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7720E2D3244873FE00C3B288 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7720E2E5244873FF00C3B288 /* LaunchScreen.storyboard in Resources */,
+				7720E2E2244873FF00C3B288 /* Assets.xcassets in Resources */,
+				7720E2E0244873FE00C3B288 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40B29CA7260DB7271C0126F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sikke-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2D83C9AE8EEC9A9A946F4AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sikke/Pods-Sikke-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sikke/Pods-Sikke-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sikke/Pods-Sikke-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7720E2D1244873FE00C3B288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F6D660244C778D0080F33C /* LaunchViewController.swift in Sources */,
+				7720E2DD244873FE00C3B288 /* CurrencyViewController.swift in Sources */,
+				77419E41244BB33000F92FFF /* DataController.swift in Sources */,
+				77B825342449BF2C002D4794 /* Colors.swift in Sources */,
+				77FCD4182448FFB1003EA6B6 /* Extension+Double.swift in Sources */,
+				7720E2F9244884FC00C3B288 /* RatesRespose.swift in Sources */,
+				7720E2F324487BC600C3B288 /* DataModel.swift in Sources */,
+				77419E3A244BB14700F92FFF /* PortfolioCell.swift in Sources */,
+				77F6D664244CC9550080F33C /* SettingsViewController.swift in Sources */,
+				7720E2D9244873FE00C3B288 /* AppDelegate.swift in Sources */,
+				77B825302449A84A002D4794 /* PortfolioViewController.swift in Sources */,
+				7720E2F624487F8900C3B288 /* SikkeClient.swift in Sources */,
+				7720E2DB244873FE00C3B288 /* SceneDelegate.swift in Sources */,
+				77419E4C244BB71300F92FFF /* SikkeModel.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7720E2DE244873FE00C3B288 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7720E2DF244873FE00C3B288 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7720E2E3244873FF00C3B288 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7720E2E4244873FF00C3B288 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7720E2E7244873FF00C3B288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7720E2E8244873FF00C3B288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7720E2EA244873FF00C3B288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29FFA34302D133FA4BD50D7A /* Pods-Sikke.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLG734RE3M;
+				INFOPLIST_FILE = Sikke/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sikke;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7720E2EB244873FF00C3B288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53CAB2294FD43B6520D0A99D /* Pods-Sikke.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLG734RE3M;
+				INFOPLIST_FILE = Sikke/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sikke;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7720E2D0244873FE00C3B288 /* Build configuration list for PBXProject "Sikke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7720E2E7244873FF00C3B288 /* Debug */,
+				7720E2E8244873FF00C3B288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7720E2E9244873FF00C3B288 /* Build configuration list for PBXNativeTarget "Sikke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7720E2EA244873FF00C3B288 /* Debug */,
+				7720E2EB244873FF00C3B288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77419E4A244BB71300F92FFF /* SikkeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77419E4B244BB71300F92FFF /* SikkeModel.xcdatamodel */,
+			);
+			currentVersion = 77419E4B244BB71300F92FFF /* SikkeModel.xcdatamodel */;
+			path = SikkeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7720E2CD244873FE00C3B288 /* Project object */;
+}
