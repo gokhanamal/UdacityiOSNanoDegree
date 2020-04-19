@@ -9,10 +9,7 @@
 import Foundation
 
 extension Double {
-    func toString(currencyName: String?) -> String {
-        if let currencyName = currencyName {
-            return String(format: "%.2f",self) + " " + currencyName
-        }
+    func toString() -> String {
         return String(format: "%.2f",self)
     }
     

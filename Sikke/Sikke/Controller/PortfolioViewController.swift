@@ -110,7 +110,7 @@ extension PortfolioViewController: CurrencyViewControllerDelegate {
         hud.show(in: self.view)
         SikkeClient.getRates(baseCurrency: currencyCode) { success, error in
             if let error = error {
-                print(error)
+                self.showAlert(title: "Failed!", message: error.localizedDescription, actions: nil)
             }
             hud.dismiss(animated: true)
         }

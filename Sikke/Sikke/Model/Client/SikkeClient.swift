@@ -27,7 +27,6 @@ class SikkeClient {
     }
     
     class func getRates(baseCurrency: String, completion: @escaping (Bool, Error?) -> Void) {
-        print(Endpoints.getRates(baseCurrency).stringValue)
         let task = URLSession.shared.dataTask(with: Endpoints.getRates(baseCurrency).url) {data, _, error in
             guard let data = data else {
                 DispatchQueue.main.async {

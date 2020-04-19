@@ -19,15 +19,18 @@ class PortfolioCell: UITableViewCell {
     @IBOutlet weak var arrow: UIImageView!
     
     func setCell(currency: Currency, portfolio: Portfolio, baseCurrency: String) {
-        flag?.image = currency.flag
-        currencyNameLabel?.text = currency.currencyName
-        amountLabel?.text = portfolio.amount.formatCurrency(currency: currency.currencyCode)
+       
         let currentRate = DataModel.rates[currency.currencyCode] ?? 1.0
         let currentVal = (1/currentRate) * portfolio.amount
         let percentage = (((1/currentRate) - portfolio.purchasePrice) / portfolio.purchasePrice)*100
-        setArrow(percentage: percentage)
-        percentageLabel?.text = percentage.toString(currencyName: nil) + "%"
+        
+        flag?.image = currency.flag
+        currencyNameLabel?.text = currency.currencyName
+        amountLabel?.text = portfolio.amount.formatCurrency(currency: currency.currencyCode)
+        percentageLabel?.text = percentage.toString() + "%"
         currentValueLabel?.text = currentVal.formatCurrency(currency: baseCurrency)
+        
+        setArrow(percentage: percentage)
     }
     
     func setArrow(percentage: Double) {

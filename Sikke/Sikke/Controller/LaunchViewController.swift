@@ -43,6 +43,8 @@ class LaunchViewController: UIViewController {
             }
             vc.sumOfCurrentValues = total
             vc.investments = result
+        } else {
+            showAlert(title: "Failed!", message: "Could not fetch your local data.", actions: nil)
         }
     }
     

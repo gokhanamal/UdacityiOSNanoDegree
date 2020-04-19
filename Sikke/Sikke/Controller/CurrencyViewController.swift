@@ -55,9 +55,14 @@ class CurrencyViewController: UIViewController {
         portfolio.purchasePrice = Double(exchangeRate) ?? 1.0
         portfolio.currency = currency
         portfolio.createdAt = Date()
-        try? DataModel.dataController.viewContext.save()
-        self.delegate?.createInvestment(portfolio: portfolio)
-        self.dismiss(animated: true, completion: nil)
+        
+        do {
+            try DataModel.dataController.viewContext.save()
+            self.delegate?.createInvestment(portfolio: portfolio)
+            self.dismiss(animated: true, completion: nil)
+        } catch {
+            showAlert(title: "Save Error!", message: error.localizedDescription, actions: nil)
+        }
     }
     
     func showCreateInvestmentAlert() {

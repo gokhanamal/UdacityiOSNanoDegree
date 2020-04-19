@@ -17,7 +17,6 @@ class DataController {
     }
     
     init(modelName: String) {
-        print(modelName)
         persistentContainer = NSPersistentContainer(name: modelName)
     }
     
