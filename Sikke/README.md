@@ -31,13 +31,13 @@ Sikke is a simple currency wallet that allow to save your currency investments t
 
 # How to run
 
-1. Clone this repository
-   `$ git clone https://github.com/gokhanamal/UdacityiOSNanoDegree`
-2. Change directory
-   `$ cd UdacityiOSNanoDegree/Sikke`
-3. This project use [CocoaPods](https://cocoapods.org/) for dependency manager. You have to install cocoapods to your computer.
-   `$ sudo gem install cocoapods`
-4. Install the pod files
-   `$ pod install`
+1. Clone this repository \
+`$ git clone https://github.com/gokhanamal/UdacityiOSNanoDegree`
+2. Change directory \
+`$ cd UdacityiOSNanoDegree/Sikke`
+3. This project use [CocoaPods](https://cocoapods.org/) for dependency manager. You have to install cocoapods to your computer. \
+`$ sudo gem install cocoapods`
+4. Install the pod files \
+`$ pod install`
 5. Open Sikke.xcworkspace on Xcode
 6. Build and Run the project
