@@ -24,6 +24,7 @@
 		77B825342449BF2C002D4794 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B825332449BF2C002D4794 /* Colors.swift */; };
 		77F6D660244C778D0080F33C /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6D65F244C778D0080F33C /* LaunchViewController.swift */; };
 		77F6D664244CC9550080F33C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6D663244CC9550080F33C /* SettingsViewController.swift */; };
+		77F6D666244CD0A80080F33C /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6D665244CD0A80080F33C /* Extension+ViewController.swift */; };
 		77FCD4182448FFB1003EA6B6 /* Extension+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FCD4172448FFB1003EA6B6 /* Extension+Double.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		77B825332449BF2C002D4794 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		77F6D65F244C778D0080F33C /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		77F6D663244CC9550080F33C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		77F6D665244CD0A80080F33C /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
 		77FCD4172448FFB1003EA6B6 /* Extension+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Double.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				77FCD4172448FFB1003EA6B6 /* Extension+Double.swift */,
+				77F6D665244CD0A80080F33C /* Extension+ViewController.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				77FCD4182448FFB1003EA6B6 /* Extension+Double.swift in Sources */,
 				7720E2F9244884FC00C3B288 /* RatesRespose.swift in Sources */,
 				7720E2F324487BC600C3B288 /* DataModel.swift in Sources */,
+				77F6D666244CD0A80080F33C /* Extension+ViewController.swift in Sources */,
 				77419E3A244BB14700F92FFF /* PortfolioCell.swift in Sources */,
 				77F6D664244CC9550080F33C /* SettingsViewController.swift in Sources */,
 				7720E2D9244873FE00C3B288 /* AppDelegate.swift in Sources */,

@@ -46,6 +46,10 @@ class CurrencyViewController: UIViewController {
     
     func saveCurrency(currency: String, amount: String?, exchangeRate: String?) {
         guard let amount = amount, let exchangeRate = exchangeRate else {return}
+        if amount.isEmpty || exchangeRate.isEmpty {
+            showAlert(title: "Field Error!", message: "Please fill all fields.", actions: nil)
+            return
+        }
         let portfolio = Portfolio(context: DataModel.dataController.viewContext)
         portfolio.amount = Double(amount) ?? 0.0
         portfolio.purchasePrice = Double(exchangeRate) ?? 1.0
@@ -63,7 +67,7 @@ class CurrencyViewController: UIViewController {
             let base = UserDefaults.standard.string(forKey: "baseCurrency")
         else {return}
         
-        let currency = DataModel.currencies[index]
+        let currency = currencies[index]
         ac.message = "Please fill the fields according to your investment details."
         ac.addTextField(configurationHandler: { textField in
             textField.placeholder = "Amount in \(currency.currencyCode)"
@@ -91,9 +95,20 @@ class CurrencyViewController: UIViewController {
 }
 
 extension CurrencyViewController: UISearchBarDelegate {
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        guard let text = searchBar.text else {return}
-        currencies = DataModel.currencies.filter({$0.currencyName.contains(text) || $0.currencyCode.contains(text)})
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            currencies = DataModel.currencies
+        } else {
+            currencies = DataModel.currencies.filter({ currency in
+                let searchText =  searchText.lowercased()
+                let currencyName = currency.currencyName.lowercased()
+                let currencyCode = currency.currencyCode.lowercased()
+                if currencyName.contains(searchText) || currencyCode.contains(searchText) {
+                    return true
+                }
+                return false
+            })
+        }
         tableView.reloadData()
     }
 }

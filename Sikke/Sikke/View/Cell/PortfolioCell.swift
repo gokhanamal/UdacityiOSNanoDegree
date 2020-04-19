@@ -31,6 +31,7 @@ class PortfolioCell: UITableViewCell {
     }
     
     func setArrow(percentage: Double) {
+        arrow.isHidden = false
         if percentage > 0 {
             arrow.image = UIImage(systemName: "arrowtriangle.up.fill")
             arrow.tintColor = Colors.green

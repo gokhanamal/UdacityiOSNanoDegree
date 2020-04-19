@@ -9,7 +9,7 @@
 import UIKit
 
 class SettingsViewController: UITableViewController {
-    let buttons = [["Sources","Feedback & Support", "Rate in the App Store"],["Make contribution on GitHub",]]
+    let buttons = [["Data Set","Feedback & Support", "Rate in the App Store"],["Make contribution on GitHub", "About Developer - Gökhan"]]
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -32,10 +32,37 @@ class SettingsViewController: UITableViewController {
         }
         return "Sikke app is an open source project. You can contribute and help to improve some features."
     }
+    fileprivate func openURL(string: String) {
+        let url = URL(string: string)!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1 {
-            let url = URL(string: "https://github.com/gokhanamal/UdacityiOSNanoDegree/Sikke")!
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            switch indexPath.row {
+            case 0:
+                openURL(string: "https://github.com/gokhanamal/UdacityiOSNanoDegree/tree/master/Sikke")
+                break;
+            case 1:
+                openURL(string: "https://www.linkedin.com/in/gokhanamal/")
+                break;
+            default:
+                break;
+            }
+            
+        } else {
+            switch indexPath.row {
+            case 0:
+                openURL(string: "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html")
+                break;
+            case 1:
+                showAlert(title: "Feedback & Support", message: "For any advices or feedbacks you can send an email: gokhanamal@gmail.com", actions: nil)
+            case 2:
+                openURL(string: "https://apps.apple.com/us/developer/gokhan-namal/id1476997783")
+            default:
+                break;
+            }
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

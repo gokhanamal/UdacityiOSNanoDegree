@@ -16,7 +16,7 @@ class LaunchViewController: UIViewController {
         if let baseCurrency = UserDefaults.standard.string(forKey: "baseCurrency")  {
             SikkeClient.getRates(baseCurrency: baseCurrency) {rates, error in
                 if let error = error {
-                    print(error)
+                    self.showAlert(title: "Currency Error!", message: error.localizedDescription, actions: nil)
                 } else {
                     // Show main view after get currencies rate
                     self.performSegue(withIdentifier: "showMain", sender: nil)

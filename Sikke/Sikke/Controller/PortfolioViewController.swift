@@ -163,13 +163,3 @@ extension PortfolioViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
-
-extension PortfolioViewController {
-    func showAlert(title: String, message: String?, actions: [UIAlertAction]?) {
-        let vc = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        for action in actions ?? [] {
-            vc.addAction(action)
-        }
-        self.present(vc, animated: true, completion: nil)
-    }
-}
