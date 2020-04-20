@@ -1,4 +1,4 @@
-# UdacityProjects
+# Udacity Projects
 
 This repo contains my udacity iOS developer nano degree projects
 
