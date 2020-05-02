@@ -1,7 +1,7 @@
 ## Sikke: Currency Wallet
 
 Sikke is a simple currency wallet that allow to save your currency investments to your wallet and you can see realtime value of your investments according to your base currency.
-
+Checkout on app store: [Sikke on App Store](https://apps.apple.com/us/app/sikke-currency-wallet/id1509535676)
 ## Screenshots
 
 ![Sikke](https://i.hizliresim.com/H2mqO2.jpg)
